@@ -1,0 +1,14 @@
+
+fastapi==0.65.2
+motor==2.4.0
+starlette-csrf==1.2.1
+uvicorn[standard]==0.14.0
+asgi-lifespan
+black
+codecov
+httpx
+pytest
+pytest-asyncio
+pytest-cov
+pytest-mock
+pytest-unordered
