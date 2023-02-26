@@ -6,7 +6,7 @@ import pytest_asyncio
 from asgi_lifespan import LifespanManager
 from fastapi import status
 
-from app import app
+from .app import app
 
 
 @pytest.fixture(scope="session")
