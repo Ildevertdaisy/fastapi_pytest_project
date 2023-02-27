@@ -46,3 +46,11 @@ async def test_valid(test_client: httpx.AsyncClient):
     assert response.status_code == status.HTTP_201_CREATED
     json = response.json()
     assert json == payload
+
+@pytest.mark.asyncio
+async def test_valid(test_client: httpx.AsyncClient):
+    payload = {"first_name": "Axel", "last_name": "Kolo", "age": 28}
+    response = await test_client.post("/new-person", json=payload)
+    assert response.status_code == status.HTTP_201_CREATED
+    json = response.json()
+    assert json == payload
