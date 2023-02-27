@@ -21,6 +21,11 @@ async def create_person(person: Person):
     return person
 
 
+@app.post("/new-person", status_code=status.HTTP_201_CREATED)
+async def create_person(person: Person):
+    return person
+
+
 @app.on_event("startup")
 async def startup():
     print("Startup")
